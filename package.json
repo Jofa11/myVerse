@@ -1,0 +1,23 @@
+{
+  "name": "my_verse_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jofa11/myVerse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jofa11/myVerse/issues"
+  },
+  "homepage": "https://github.com/Jofa11/myVerse#readme",
+  "dependencies": {
+    "mongoose": "^5.11.11"
+  }
+}
