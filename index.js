@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
 
+const verseController = require('./controllers/verse');
+
+app.use(verseController);
+
 const Verse = require('./models/Verse');
 
 const port = process.env.PORT || 4000;
