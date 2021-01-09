@@ -26,11 +26,11 @@ const myFirstVerse = {
 	author: 'Joshua F',
 };
 
-Verse.create(myFirstVerse, (error, verse) => {
-	if (error) {
-		console.log(error);
-	} else {
-		console.log(verse);
-	}
-	db.close();
-});
+// Verse.create(myFirstVerse, (error, verse) => {
+// 	if (error) {
+// 		console.log(error);
+// 	} else {
+// 		console.log(verse);
+// 	}
+// 	db.close();
+// });
