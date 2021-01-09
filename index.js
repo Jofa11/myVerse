@@ -3,9 +3,13 @@ const app = express();
 
 const verseController = require('./controllers/verse');
 
-app.use(verseController);
+app.use(express.json());
 
-const Verse = require('./models/Verse');
+app.use(express.urlencoded({ extended: true }));
+
+app.use(cors());
+
+app.use('/verses', verseController);
 
 const port = process.env.PORT || 4000;
 
