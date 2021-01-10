@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 
 const verseController = require('./controllers/verse');
-const userController = require('./controllers/user');
+const userController = require('./controllers/users');
 
 app.use(express.json());
 
