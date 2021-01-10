@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 mongoose.Promise = Promise;
 
 // set the uri for connecting to our local mongodb
-// const mongoURI = "mongodb://localhost/book-e";
+// const mongoURI = "mongodb://localhost/verses";
 let mongoURI = '';
 if (process.env.NODE_ENV === 'production') {
 	mongoURI = process.env.DB_URL;
