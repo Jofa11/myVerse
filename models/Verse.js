@@ -2,7 +2,10 @@ const mongoose = require('../db/connection');
 
 const VerseSchema = new mongoose.Schema(
 	{
-		body: String,
+		body: {
+			type: String,
+			required: true,
+		},
 		author: String,
 	},
 	{ timestamps: true }

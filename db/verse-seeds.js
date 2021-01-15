@@ -11,6 +11,16 @@ const myNextVerse = {
 	author: 'Joshua F',
 };
 
+const anotherVerse = {
+    body: 'I got this!',
+    author: 'Joshua F',
+};
+
+const ronVerse = {
+    body: 'I am in a glass cage of emotion!',
+    author: 'Ron B',
+}
+
 // Verse.create(myNextVerse, (error, verse) => {
 // 	if (error) {
 // 		console.log(error);
@@ -22,7 +32,7 @@ const myNextVerse = {
 
 Verse.deleteMany({})
 	.then(() => {
-		return Verse.collection.insertMany([myFirstVerse, myNextVerse]);
+		return Verse.collection.insertMany([myFirstVerse, myNextVerse, anotherVerse, ronVerse]);
 	})
 	.then(() => {
 		process.exit();
