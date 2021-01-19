@@ -8,6 +8,10 @@ router.get('/', (req, res) => {
 	});
 });
 
+router.get('/:id', (req, res) => {
+	Verse.findOne({ _id: req.params.id }).then((Verse) => res.json(Verse));
+});
+
 router.post('/', (req, res) => {
 	Verse.create(req.body).then((Verse) => res.json(Verse));
 });
