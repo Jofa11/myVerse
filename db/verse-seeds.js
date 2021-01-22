@@ -40,7 +40,7 @@ const Verse = require('../models/Verse');
 // 		process.exit();
 // 	});
 
-Verse.create.deleteMany({}).then(() => {
+Verse.deleteMany({}).then(() => {
 	console.log('deleted all verses');
 
 	Verse.create({
