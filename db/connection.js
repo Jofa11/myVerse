@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === 'production') {
 mongoose
 	.connect(mongoURI, {
 		useNewUrlParser: true,
-		useUnifiedTopology: true,
+		// useUnifiedTopology: true,
 		useCreateIndex: true,
 		useFindAndModify: false,
 	})
