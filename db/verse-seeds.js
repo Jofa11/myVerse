@@ -97,5 +97,6 @@ Verse.deleteMany({}).then(() => {
 		})
 		.catch(() => {
 			console.log('error');
+			process.exit();
 		});
 });
