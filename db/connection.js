@@ -8,11 +8,11 @@ mongoose.Promise = Promise;
 
 // set the uri for connecting to our local mongodb
 // const mongoURI = "mongodb://localhost/verses";
-const mongoURI = "mongodb+srv://myVerse11:IrcQxtOMTZGFPU1W@cluster0.xhnfa.mongodb.net/verses?retryWrites=true&w=majority";
-	// process.env.NODE_ENV === 'production' ||
-	// process.env.NODE_ENV === 'development'
-	// 	? process.env.DB_URL
-	// 	: 'mongodb://localhost/verses';
+const mongoURI = 
+	process.env.NODE_ENV === 'production' ||
+	process.env.NODE_ENV === 'development'
+		? process.env.DB_URL
+		: 'mongodb://localhost/verses';
 
 
 // connect to the database, with the imported mongoose instance
