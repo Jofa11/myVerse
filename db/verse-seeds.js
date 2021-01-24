@@ -40,8 +40,8 @@ const Verse = require('../models/Verse');
 // 		process.exit();
 // 	});
 
-// Verse.deleteMany({}).then(() => {
-// 	console.log('deleted all verses');
+Verse.deleteMany({}).then(() => {
+	console.log('deleted all verses');
 
 	Verse.create({
 		body:
@@ -99,4 +99,4 @@ const Verse = require('../models/Verse');
 			console.log('error');
 			process.exit();
 		});
-// });
+});
